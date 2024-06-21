@@ -32,6 +32,7 @@ const $_ = async (method, url, data) => {
     var headers = {};
     if (data) {
         headers['Content-Type'] = 'application/json';
+        headers['Accept'] = 'application/json';
     };
     const resp = await fetch(url, {
         method: method,
