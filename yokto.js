@@ -36,7 +36,7 @@ const $_ = async (method, url, data) => {
     };
     const resp = await fetch(url, {
         method: method,
-        mode: 'same-origin',
+        /* mode: 'same-origin', */
         cache: 'no-cache',
         credentials: 'same-origin',
         headers: headers,
