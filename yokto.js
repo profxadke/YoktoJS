@@ -45,15 +45,16 @@ const $_ = async (method, url, data) => {
     var headers = {};
     if (data) {
         headers['Content-Type'] = 'application/json';
+        headers['Accept'] = 'application/json';
     };
     const resp = await fetch(url, {
         method: method,
-        mode: 'same-origin',
+        mode: 'cors',
         cache: 'no-cache',
         credentials: 'same-origin',
         headers: headers,
         redirect: 'follow',
-        referrerPolicy: 'no-referrer',
+        referrerPolicy: 'unsafe-url',
         body: JSON.stringify(data)
     });
     return await resp.json();
