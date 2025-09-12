@@ -1,9 +1,9 @@
 # YoctoJS
 
-> Yokto simply means smallest SI prefix. 
+> Yokto simply means smallest SI prefix. [docs within code.]
 
-No framework framework 😛
+A micro DOM utility/minimal DOM/HTTP, WebSocket helper library + DOM updater
 
-YoktoJS is supposed to be used with VanillaJS, using any frameworks* parallelly might bug things up!
+YoktoJS is supposed to be used with VanillaJS, using any frameworks* parallelly ~might~ would bug things up!
 --
 \*frameworks as in: jQuery, etc.
