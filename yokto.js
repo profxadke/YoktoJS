@@ -7,9 +7,10 @@
  *   - Helpers: __
  *   - Element creation: _
  *   - DOM ready: $$
- *   - HTTP fetch: $_
- *   - DOM updater: updateElems
- *   - Inline style helper: css
+ *   - DOM updater: $_
+ *   - HTTP Clients: RESTClient, GraphQLClient
+ *   - WebSocket Client: WSClient
+ *   - Inline style helper: $c
  *
  * API:
  *   $(selector, return_list) -> Selects elements
@@ -24,7 +25,7 @@
  *
  *   $_(method, url, data) -> Fetch wrapper for JSON APIs
  *
- *   updateElems(query, options|string|array) -> Universal DOM updater
+ *   $_(query, options|string|array) -> Universal DOM updater
  *     - addClasses: string|array
  *     - removeClasses: string|array
  *     - toggleClasses: string|array
@@ -32,6 +33,21 @@
  *     - removeAttrs: string|array
  *     - index: number (optional, target only one element)
  *     - If `options` is a string or array, defaults to addClasses
+ *
+ *   RESTClient() -> HTTP REST Client
+ *     - ...
+ *     - ...: ..|..
+ *     - ...
+ *
+ *   GraphQLClient() -> GraphQ Client
+ *     - ...: ...
+ *     - ...: ...|...
+ *     - ...
+ *
+ *   WSClient() -> WebSocket Client
+ *     - ...: ...
+ *     - ...: ...|...
+ *     - ...
  */
 
 
